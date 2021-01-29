@@ -5,6 +5,8 @@ class Config{
     private $db = "task";
     private $username = "root";
     private $password = "";
+
+    //Set your URL
     public $baseUrl = "http://localhost/task/";
 
     public function __construct(){
