@@ -1,0 +1,95 @@
+* {
+ font-family: Lato;
+}
+body {
+    
+    background-image: url('dice-gambling-gamble-game-play.jpg');
+    background-repeat: no-repeat;
+    
+    background-size: cover;
+    background-position: top center;
+
+}
+.logo-top img{
+    padding-top: 3rem;
+}
+.row{
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.row div{
+    margin: auto;
+}
+.row .div-image{
+ padding-left: 0;
+ clip-path: polygon(85% 0%, 95% 50%, 85% 100%, 0% 100%, 0 50%, 0% 0%);
+
+}
+.row .row-image{
+    background-size: cover;
+
+    border-radius: 10px 0px 0px 10px;
+}
+.row .col-1 span{
+    font-weight: bold;
+    font-size: 2rem;
+}
+.row .col-1, .col-2, .col-3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-right: 1px solid rgb(226, 223, 223);
+}
+.row .col-2{
+    padding-top: 43px;
+    padding-bottom: 43px;
+}
+.row .col-3{
+    padding-top: 38px;
+    padding-bottom: 38px;
+}
+.row .col-3 h1{
+    font-weight: bolder;
+}
+
+.row .col-2 .fa-star{
+    color: gold;
+}
+.row .col-2 .fa-star:last-child{
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: gold;
+}
+.row-header div{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+@media only screen and (max-width : 768px) {
+    .row-header, .col-3, .logo-top p,.col-2 span{
+        display: none;
+    }
+    .row .row-image{
+        border-radius: 50%;
+        
+        width: 100px;
+        height: 100px;
+    }
+    .row .div-image{
+        width: 25%;
+        clip-path: none;
+    }
+    .row .col-2{
+        position: absolute;
+        right: 0;
+        padding: 0;
+        width: 150px;
+    }
+    .col-1, .col-2{
+        max-width: none;
+    }
+    
+    .container{
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+}
