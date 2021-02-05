@@ -65,8 +65,12 @@ class Logs{
         $userIp = $data['userIp'];
         $butonId = $data['buttonId'];
         $datetime = $data['datetime'];
+        try {
         $sql = "Insert into  $this->table (user_ip, datetime, buton_id) values ('$userIp', '$datetime', '$butonId')";
         $result = mysqli_query($this->config->db(), $sql);
+        }catch(Exception $e) {
+            echo 'Message: ' .$e->getMessage();
+        }
         //return mysqli_num_rows($result);
     }
 

@@ -19,7 +19,7 @@ if(isset($_POST['buttonId'])){
         $data = array(
             'buttonId' => $_POST['buttonId'],
             'userIp' => getUserIp(),
-            'datetime' => date("Y-m-d h:i:sa")
+            'datetime' => date("Y-m-d h:i:s")
         );
 
         $logs = new Logs;
